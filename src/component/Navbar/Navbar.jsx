@@ -7,8 +7,9 @@
   import { Link } from "react-scroll";
   import { MenuHamburguesa } from "../MenuHamburguesa/MenuHamburguesa";
   import { useDispatch, useSelector } from "react-redux";
-import { closeMenu, toggleMenu } from "../../redux/features/MenuSlice";
+
 import { CartContainer, ContainerModelCart, HeaderConteiner, LinksAndCartContainer, LinksContainer } from "./NavbarStyles";
+import { closeMenu, toggleMenu } from "../../redux/features/menuSlice";
   
   
   export const Navbar = () => {
