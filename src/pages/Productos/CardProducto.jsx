@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../Redux/features/Cart/CartSlice';
 import { toast, Toaster } from 'sonner';
-// import { addProductToCart } from "../../Redux/features/Cart/cartSeconds";
-// import { useNavigate } from "react-router-dom";
 
 export const CardProducto = ({
   imagen,
@@ -16,8 +14,7 @@ export const CardProducto = ({
   id,
 }) => {
   const dispatch = useDispatch();
-  // const user = useSelector((state) => state.user.user);
-  // const navigate = useNavigate();
+
 
   return (
     <ProductGrid>

@@ -1,6 +1,6 @@
 
   import { motion } from "framer-motion";
-  import CartIcons from "./CartIcon/CartIcons";
+ 
   import CartModel from "./../CartModel/CartModel";
   import { useLocation, useNavigate } from "react-router-dom";
   import { useEffect } from "react";
@@ -10,6 +10,7 @@
 
 import { CartContainer, ContainerModelCart, HeaderConteiner, LinksAndCartContainer, LinksContainer } from "./NavbarStyles";
 import { closeMenu, toggleMenu } from "../../redux/features/menuSlice";
+import CartIcons from './CartIcon/CartIcons';
   
   
   export const Navbar = () => {
@@ -94,7 +95,7 @@ import { closeMenu, toggleMenu } from "../../redux/features/menuSlice";
               <>
                 <motion.div whileHover={{ scale: 1.2 }}>
                   <CartContainer>
-                    <CartIcons />
+                    <CartIcons/>
                   </CartContainer>
                 </motion.div>
                 <ContainerModelCart>
