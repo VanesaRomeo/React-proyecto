@@ -16,8 +16,9 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-import { formatPrecio } from '@utiles/formatprecio';
+
 import { emptyCart, toggleCartVisibility } from '../../Redux/features/Cart/CartSlice';
+import { formatPrecio } from '../../utiles/Formatprecio';
 
 const CartModel = () => {
   const { itemsInCart, isCartHidden } = useSelector((state) => state.cart);
