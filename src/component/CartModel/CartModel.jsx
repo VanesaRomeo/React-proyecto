@@ -10,14 +10,12 @@ import {
 } from './CartModelStyles';
 import Button from './../UI/Button/Button';
 import { CardCart } from './CardCart';
-import {
-  emptyCart,
-  toggleCartVisibility,
-} from '../../Redux/features/Cart/CartSlice';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 import { formatPrecio } from '../../utiles/Formatprecio';
+import { emptyCart, toggleCartVisibility } from '../../../Redux/features/cart/cartSlice';
 
 const CartModel = () => {
   const { itemsInCart, isCartHidden } = useSelector((state) => state.cart);
