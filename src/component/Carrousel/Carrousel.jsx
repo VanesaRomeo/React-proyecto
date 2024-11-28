@@ -18,28 +18,28 @@ function AutoPlay() {
     <SliderContainer>
       <Slider {...settings}>
         <div>
-          <img src="/public/img/Dracula.webp" alt="" />
+          <img src="/src/assets/img/Dracula.webp" alt="" />
         </div>
         <div>
-          <img src="/public/img/alicia.jpg" alt="" />
+          <img src="/src/assets/img/alicia.jpg" alt="" />
         </div>
         <div>
           <img
-            src="/public/img/f.elconfidencial.com_original_fc3_cf2_1b6_fc3cf21b6b7c29ae068a3c6121852d12.jpg"
+            src="/src/assets/img/Crimen y Castigo.webp"
             alt=""
           />
         </div>
         <div>
           <img
-            src="/public/img/e3d17acc42ec-los-dioses-del-norte-la-leyenda-del-bosque-de-jara-santamar-a-montena-.webp"
+            src="/src/assets/img/Don Quijote de la Mancha.jpeg"
             alt=""
           />
         </div>
         <div>
-          <img src="/public/img/images.jpeg" alt="" />
+          <img src="/src/assets/img/El Amor en los Tiempos del Cólera.jpg" alt="" />
         </div>
         <div>
-          <img src="/public/img/9789504944171.webp" alt="" />
+          <img src="/src/assets/img/El Guardián entre el Centeno.webp" alt="" />
         </div>
       </Slider>
     </SliderContainer>
