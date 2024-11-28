@@ -3,7 +3,7 @@ import { CategoryDiv } from './CategoryStyles';
 
 import PropTypes from 'prop-types';
 import { FaStar } from 'react-icons/fa';
-import { selectCategory } from '../../redux/features/categorySlice';
+import { selectCategory } from '@/redux/features/categorySlice';
 
 export const Category = ({ title, category }) => {
   const { selectedCategory } = useSelector((state) => state.categorias);

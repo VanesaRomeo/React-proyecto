@@ -1,12 +1,9 @@
 import { Routes as ReactDomRoutes, Route } from 'react-router-dom';
-import { Conocenos } from '../pages/Conocenos/Conocenos';
-import { Productos } from '../pages/Productos/Productos';
-
-
-
-import Home from './../pages/Home/Home';
-import Formulario from './../pages/Formulario/Formulario';
-import Checkout from './../pages/CheckOut/CheckOut';
+import Home from '@/pages/Home/Home';
+import Formulario from '@/pages/Formulario/Formulario';
+import Checkout from '@/pages/CheckOut/CheckOut';
+import { Conocenos } from '@/pages/Conocenos/Conocenos';
+import { Productos } from '@/pages/Productos/Productos';
 
 function Routes() {
   return (

@@ -6,14 +6,14 @@ import {
   ProductoDiv,
 } from './ProductosStyles';
 
-import Button from '../../component/UI/Button/Button';
+import Button from '@/component/UI/Button/Button';
 import { useState } from 'react';
 
 import { CardProducto } from './CardProducto';
-import { INITIAL_LIMIT } from './../../utiles/constantes';
+import { INITIAL_LIMIT } from '@/utiles/constantes';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Categories } from './../../component/Category/Categories';
+import { Categories } from '@/component/Category/Categories';
 
 export const Productos = () => {
   const location = useLocation();

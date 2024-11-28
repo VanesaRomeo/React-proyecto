@@ -9,7 +9,7 @@
   import { useDispatch, useSelector } from "react-redux";
 
 import { CartContainer, ContainerModelCart, HeaderConteiner, LinksAndCartContainer, LinksContainer } from "./NavbarStyles";
-import { closeMenu, toggleMenu } from "../../redux/features/menuSlice";
+import { closeMenu, toggleMenu } from "@/redux/features/menuSlice";
 import CartIcons from './CartIcon/CartIcons';
   
   

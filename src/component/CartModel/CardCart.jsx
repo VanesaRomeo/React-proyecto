@@ -13,9 +13,9 @@ import {
   QuantityDisplay,
 } from './CartModelStyles';
 import { useDispatch } from 'react-redux';
-import { formatPrecio } from '../../utiles/Formatprecio';
+import { formatPrecio } from '@/utiles/Formatprecio';
 
-import { addItem, removeItem } from '../../Redux/features/Cart/CartSlice';
+import { addItem, removeItem } from '@/redux/features/cart/cartSlice';
 
 export const CardCart = ({
   titulo,
