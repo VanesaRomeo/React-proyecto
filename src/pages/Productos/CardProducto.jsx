@@ -1,10 +1,10 @@
 import { ProductCard, ProductGrid } from './ProductosStyles';
-import Button from './../../component/UI/Button/Button';
+import Button from '/../../component/UI/Button/Button';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 
 import { toast, Toaster } from 'sonner';
-import { addItem } from '../../Redux/features/cart/cartSlice';
+import { addItem } from '/../../Redux/features/cart/cartSlice';
 
 export const CardProducto = ({
   imagen,
