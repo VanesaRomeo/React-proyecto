@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 
 import { toast, Toaster } from 'sonner';
-import { addItem } from '@/Redux/features/cart/cartSlice';
+import { addItem } from '@/redux/features/cart/cartSlice';
 
 export const CardProducto = ({
   imagen,
