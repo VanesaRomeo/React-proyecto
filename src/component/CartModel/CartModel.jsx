@@ -20,7 +20,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-import { emptyCart, toggleCartVisibility } from '../../Redux/features/Cart/CartSlice';
+import { emptyCart, toggleCartVisibility } from '../../redux/features/cart/cartSlice';
 import { formatPrecio } from '/../../utiles/formatprecio';
 
 const CartModel = () => {
