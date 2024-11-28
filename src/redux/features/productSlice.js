@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { libros } from '../../array/productosData';
+import { libros } from '../../array/productos';
+
 
 
 
