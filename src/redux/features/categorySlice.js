@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { categorias } from '../../array/categorias';
+import { categorias } from '@/array/categorias';
+
 
 
 
