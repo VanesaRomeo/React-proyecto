@@ -13,7 +13,7 @@ import {
   QuantityDisplay,
 } from './CartModelStyles';
 import { useDispatch } from 'react-redux';
-import { formatPrecio } from '../../utiles/Formatprecio';
+import { formatPrecio } from './../../utiles/formatprecio';
 
 import { addItem, removeItem } from '@/redux/features/cart/cartSlice';
 
