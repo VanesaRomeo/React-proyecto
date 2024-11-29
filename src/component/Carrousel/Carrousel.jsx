@@ -18,28 +18,28 @@ function AutoPlay() {
     <SliderContainer>
       <Slider {...settings}>
         <div>
-          <img src="/src/assets/img/Dracula.webp" alt="" />
+          <img src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837225/alicia_vxtegs.jpg" alt="" />
         </div>
         <div>
-          <img src="/src/assets/img/alicia.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837225/Anna_Karenina_rhflpb.webp" alt="" />
         </div>
         <div>
           <img
-            src="/src/assets/img/Crimen y Castigo.webp"
+            src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837222/se%C3%B1or_de_los_anillos_xm4f9k.jpg"
             alt=""
           />
         </div>
         <div>
           <img
-            src="/src/assets/img/Don Quijote de la Mancha.jpeg"
+            src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837221/principito_elp5zd.webp"
             alt=""
           />
         </div>
         <div>
-          <img src="/src/assets/img/El Amor en los Tiempos del Cólera.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837222/se%C3%B1or_de_los_anillos_xm4f9k.jpg" alt="" />
         </div>
         <div>
-          <img src="/src/assets/img/El Guardián entre el Centeno.webp" alt="" />
+          <img src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837245/los_dioses_del_norte_hdhqnq.webp" alt="" />
         </div>
       </Slider>
     </SliderContainer>

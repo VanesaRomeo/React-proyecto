@@ -31,7 +31,7 @@ import CartIcons from './CartIcon/CartIcons';
   
     return (
       <HeaderConteiner>
-        <img  src="/src/assets/img/logo1 copy.png" 
+        <img   src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732836113/logo1_copy_l1ho8j.png"  
         alt="Descripción de la imagen" />
   
         <LinksAndCartContainer>

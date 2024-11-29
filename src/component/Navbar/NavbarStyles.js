@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderConteiner = styled.header`
-  background-image: url('/src/assets/img/libro-biblioteca-libro-texto-abierto_1150-5922.webp');
+  background-image: url('https://res.cloudinary.com/dc15c8nx7/image/upload/v1732836370/libro-biblioteca-libro-texto-abierto_1150-5922_out8tp.webp');
   background-size: cover;
   background-position: center;
   object-fit: cover;
