@@ -71,7 +71,7 @@ export const libros = [
       titulo: '1984',
       descripcion: 'Distopía sobre el control totalitario de la sociedad.',
       precio: 1400,
-      category: 'Cs.Ficcion',
+      category: 'Cs. ficcion',
       imagen: 'https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837224/1984_ppcwst.jpg',
     },
     {
@@ -129,7 +129,7 @@ export const libros = [
       titulo: 'Fahrenheit 451',
       descripcion: 'Distopía sobre una sociedad que quema libros.',
       precio: 1300,
-      category: 'Cs.Ficcion',
+      category: 'Cs. Ficcion',
       imagen: 'https://res.cloudinary.com/dc15c8nx7/image/upload/v1732840008/Fahrenheit_451_tj12eq.jpg',
     },
     {
@@ -225,7 +225,7 @@ export const libros = [
       descripcion:
         'Sátira política sobre el totalitarismo, escrita por George Orwell.',
       precio: 1200,
-      category: 'Cs.Ficcion',
+      category: 'Cs. Ficcion',
       imagen: 'https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837222/Rebeli%C3%B3n_en_la_Granja_ap9s8t.jpg',
     },
     {
