@@ -15,7 +15,7 @@ export const Hero = () => {
         
       </HeroSeparatorStyled>
       <img
-        src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732836484/muchos-libros-apilados-con-fondo-borroso-de-librer%C3%ADa-llena-de-libros-foto-con-copyspace_nysctm.png"
+        src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837221/muchos-libros-apilados-con-fondo-borroso-de-librer%C3%ADa-llena-de-libros-foto-con-copyspace_wnbtda.png"
         alt=""
       />
       <HeroStyled>

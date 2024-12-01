@@ -43,7 +43,7 @@ export const HeroContainer = styled.section`
     }
 
     @media (max-width: 480px) {
-      height: 50vh; /* Ajuste de altura en pantallas pequeñas */
+      height: 55vh; /* Ajuste de altura en pantallas pequeñas */
     }
   }
 `;
@@ -121,7 +121,7 @@ export const HeroStyled = styled.div`
 
   @media (max-width: 450px) {
     h2 {
-      font-size: 25px;
+      font-size: 20px;
       width: 300px;
     }
     p,

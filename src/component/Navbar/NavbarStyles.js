@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const HeaderConteiner = styled.header`
   background-image: url('https://res.cloudinary.com/dc15c8nx7/image/upload/v1732836370/libro-biblioteca-libro-texto-abierto_1150-5922_out8tp.webp');
   background-size: cover;
@@ -54,33 +55,12 @@ export const LinksAndCartContainer = styled.div`
     flex-direction: row;
     gap: 0.5rem;
   }
+
+
 `;
 
 export const LinksContainer = styled.ul`
-  display: ${({ $clicked }) => ($clicked ? "flex" : "none")};
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  left: ${({ $clicked }) => ($clicked ? "0" : "-100%")};
-  height: 50vh;
-  width: 25vw;
-  background-color: rgba(245, 245, 220, 0.2);
-
-  border-top-right-radius: ${({ $clicked }) => ($clicked ? "50%" : "0")};
-  border-bottom-right-radius: ${({ $clicked }) => ($clicked ? "50%" : "0")};
-  clip-path: ${({ $clicked }) =>
-    $clicked ? "circle(100% at left center)" : "circle(0% at left center)"};
-  transition: all 0.5s ease-in-out;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 2rem;
-  gap: 2rem;
-  z-index: 10;
-
-  @media (min-width: 769px) {
-    display: flex;
+   display: flex;
     position: static;
     flex-direction: row;
     justify-content: flex-end;
@@ -92,14 +72,34 @@ export const LinksContainer = styled.ul`
     padding-left: 0;
     gap: 1rem;
     padding: 20px;
+
+    
+  @media (max-width: 769px) {
+    display: ${({ $clicked }) => ($clicked ? "flex" : "none")};
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: ${({ $clicked }) => ($clicked ? "0" : "-100%")};
+  height: 50vh;
+  width: 25vw;
+  background-color: rgba(245, 245, 220, 0.2);
+  border-top-right-radius: ${({ $clicked }) => ($clicked ? "50%" : "0")};
+  border-bottom-right-radius: ${({ $clicked }) => ($clicked ? "50%" : "0")};
+  clip-path: ${({ $clicked }) =>
+    $clicked ? "circle(100% at left center)" : "circle(0% at left center)"};
+  transition: all 0.5s ease-in-out;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2rem;
+  gap: 2rem;
+  z-index: 10;
   }
 
-  .li {
-    list-style: none;
-    cursor: pointer;
-  }
+  
 
-  a {
+  a, .liBack {
     background-color: rgba(255, 255, 255, 0.15);
     color: bisque;
     text-decoration: none;
@@ -147,11 +147,35 @@ export const CartContainer = styled.div`
   position: relative;
   cursor: pointer;
   margin-right: 15px;
+
 `;
+
 
 export const CartIcon = styled.div`
   font-size: 30px;
   color: rgba(17, 15, 50, 0.75);
+ cursor: pointer;
+ display: flex; /* Siempre visible */
+  z-index: 20;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+  }
+`;
+
+export const LiBack = styled.li`
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: bisque;
+  padding: 0.7rem;
+
+  @media (max-width: 569px) {
+    background-color: rgba(29, 28, 64, 0.751);
+  }
 `;
 
 export const ContainerModelCart = styled.div`
@@ -162,8 +186,8 @@ export const ContainerModelCart = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  z-index: 200;
+  
+ 
 
   @media (max-width: 768px) {
     bottom: 15%;

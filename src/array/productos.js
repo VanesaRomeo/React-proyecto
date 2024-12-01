@@ -2,18 +2,20 @@ export const libros = [
     {
       id: 1,
       titulo: 'Drácula',
+      imagen: 'https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837228/Dracula_apqvqs.webp',
       descripcion: 'Novela de terror gótico de Bram Stoker.',
       precio: 1500,
       category: 'Terror',
-      imagen: 'https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837228/Dracula_apqvqs.webp',
+     
     },
     {
       id: 2,
       titulo: 'Alicia En El País De Las Maravillas',
+      imagen: 'https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837225/alicia_vxtegs.jpg',
       descripcion: 'Aventuras de Alicia en un mundo fantástico.',
       precio: 1200,
       category: 'Fantasia',
-      imagen: 'https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837225/alicia_vxtegs.jpg',
+     
     },
     {
       id: 3,

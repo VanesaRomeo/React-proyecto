@@ -53,7 +53,7 @@ export const AbountInfo = styled.div`
     }
 
     @media (max-width: 400px) {
-      width: 300px;
+      width: 250px;
       font-size: 20px;
     }
   }

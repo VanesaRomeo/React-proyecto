@@ -3,6 +3,7 @@ import Button from '../UI/Button/Button';
 import { AbountInfo } from './AbountStyles';
 
 export const Abount = () => {
+  
   const navigate = useNavigate();
   return (
     <AbountInfo id="abount">

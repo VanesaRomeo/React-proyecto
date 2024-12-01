@@ -8,7 +8,7 @@
   import { MenuHamburguesa } from "../MenuHamburguesa/MenuHamburguesa";
   import { useDispatch, useSelector } from "react-redux";
 
-import { CartContainer, ContainerModelCart, HeaderConteiner, LinksAndCartContainer, LinksContainer } from "./NavbarStyles";
+import { CartContainer, ContainerModelCart, HeaderConteiner, LiBack, LinksAndCartContainer, LinksContainer } from "./NavbarStyles";
 import { closeMenu, toggleMenu } from "@/redux/features/menuSlice";
 import CartIcons from './CartIcon/CartIcons';
   
@@ -73,8 +73,8 @@ import CartIcons from './CartIcon/CartIcons';
                 </li>
               </>
             ) : (
-              <li
-                className="liBack"
+              <LiBack
+               
                 onClick={() => {
                   navigate(-1);
                   dispatch(closeMenu());
@@ -88,13 +88,14 @@ import CartIcons from './CartIcon/CartIcons';
                 }}
               >
                 Volver
-              </li>
+              </LiBack>
             )}
-  
-            {isProductsPage && (
+
+            
+          {isProductsPage && (
               <>
                 <motion.div whileHover={{ scale: 1.2 }}>
-                  <CartContainer>
+                  <CartContainer >
                     <CartIcons/>
                   </CartContainer>
                 </motion.div>
@@ -103,7 +104,10 @@ import CartIcons from './CartIcon/CartIcons';
                 </ContainerModelCart>
               </>
             )}
+  
           </LinksContainer>
+
+          
         </LinksAndCartContainer>
       </HeaderConteiner>
     );
