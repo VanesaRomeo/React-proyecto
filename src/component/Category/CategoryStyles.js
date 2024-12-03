@@ -27,6 +27,7 @@ export const CategoryContainer = styled.div`
   @media (max-width: 480px) {
     gap: 5px;
     padding: 10px;
+    
   }
 `;
 
@@ -60,8 +61,8 @@ export const CategoryDiv = styled(motion.div)`
   }
 
   @media (max-width: 480px) {
-    font-size: 12px;
+    font-size: 10px;
     padding: 0.2rem 0.5rem;
-    min-width: 60px;
+    min-width: 70px;
   }
 `;

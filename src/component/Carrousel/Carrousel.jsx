@@ -36,7 +36,7 @@ function AutoPlay() {
           />
         </div>
         <div>
-          <img src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837222/se%C3%B1or_de_los_anillos_xm4f9k.jpg" alt="" />
+          <img src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837245/Los_Pilares_de_la_Tierra_q9iwuo.webp" alt="" />
         </div>
         <div>
           <img src="https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837245/los_dioses_del_norte_hdhqnq.webp" alt="" />

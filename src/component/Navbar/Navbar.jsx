@@ -37,6 +37,7 @@ import CartIcons from './CartIcon/CartIcons';
         <LinksAndCartContainer>
           <MenuHamburguesa handleClicked={() => dispatch(toggleMenu())} />
           {/* Links de navegación */}
+
           <LinksContainer $clicked={isMenuOpen}>
   
             {isHomePage ? (
@@ -79,19 +80,15 @@ import CartIcons from './CartIcon/CartIcons';
                   navigate(-1);
                   dispatch(closeMenu());
                 }}
-                style={{
-                  cursor: "pointer",
-                  backgroundColor: "rgba(255, 255, 255, 0.15)",
-                  color: "bisque",
-                  padding: "0.7rem",
-                  
-                }}
-              >
+                             >
                 Volver
               </LiBack>
             )}
 
-            
+           
+  
+          </LinksContainer>
+
           {isProductsPage && (
               <>
                 <motion.div whileHover={{ scale: 1.2 }}>
@@ -104,9 +101,6 @@ import CartIcons from './CartIcon/CartIcons';
                 </ContainerModelCart>
               </>
             )}
-  
-          </LinksContainer>
-
           
         </LinksAndCartContainer>
       </HeaderConteiner>

@@ -47,16 +47,29 @@ export const HeaderConteiner = styled.header`
 
 export const LinksAndCartContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  width: auto;
 
   @media (max-width: 768px) {
-    flex-direction: row;
-    gap: 0.5rem;
+    width: 100%; 
+    justify-content: flex-end;
+    gap: 1rem; 
   }
+`;
 
+export const CartContainer = styled.div`
+  position: relative;
+  cursor: pointer;
+    margin-right: 1rem; 
+    z-index: 15;
 
+  @media (max-width: 768px) {
+    margin-right: 0; /* Espaciado a la derecha del carrito */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const LinksContainer = styled.ul`
@@ -96,24 +109,33 @@ export const LinksContainer = styled.ul`
   gap: 2rem;
   z-index: 10;
   }
+  @media (max-width: 560px) {
+    height: 50vh;
+    width: 40vw;
+    font-size: 18px;
+  }
 
   
 
-  a, .liBack {
+  a {
     background-color: rgba(255, 255, 255, 0.15);
-    color: bisque;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 0.7rem;
-    border-radius: 5px;
+  color: bisque;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
 
-    @media (max-width: 769px) {
-      background-color: rgba(29, 28, 64, 0.751);
-    }
-    &:hover {
-      background-color: rgba(29, 28, 64, 0.751);
-      color: white;
-    }
+  @media (max-width: 769px) {
+    background-color: rgba(29, 28, 64, 0.751);
+  }
+
+  &:hover {
+    background-color: rgba(29, 28, 64, 0.751);
+    color: white;
+  }
+
+
   }
 `;
 
@@ -124,13 +146,14 @@ export const CartBadge = styled.div`
   padding: 0.25em 0.5em;
   font-size: 0.55em;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (max-width: 768px) {
+    
     display: flex;
     padding-right: 25px;
     cursor: pointer;
@@ -142,29 +165,22 @@ export const CartBadge = styled.div`
   }
 `;
 
-// carrito de compra
-export const CartContainer = styled.div`
-  position: relative;
-  cursor: pointer;
-  margin-right: 15px;
-
-`;
 
 
 export const CartIcon = styled.div`
   font-size: 30px;
+display: flex;
   color: rgba(17, 15, 50, 0.75);
  cursor: pointer;
- display: flex; /* Siempre visible */
   z-index: 20;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     display: flex;
   }
 
   @media (max-width: 480px) {
     display: flex;
-  }
+  } */
 `;
 
 export const LiBack = styled.li`
@@ -172,6 +188,10 @@ export const LiBack = styled.li`
   background-color: rgba(255, 255, 255, 0.15);
   color: bisque;
   padding: 0.7rem;
+
+  @media (max-width: 789px) {
+    background-color: rgba(29, 28, 64, 0.751);
+  }
 
   @media (max-width: 569px) {
     background-color: rgba(29, 28, 64, 0.751);

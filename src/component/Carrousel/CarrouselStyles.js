@@ -9,7 +9,7 @@ export const SliderContainer = styled.div`
   /* Ajusta la altura del contenedor para que se adapten las imágenes */
   img {
     width: 65%; /* Ajusta el tamaño según lo que necesites */
-    height: 350px; /* Asegúrate de que todas tengan la misma altura */
+    height: 370px; /* Asegúrate de que todas tengan la misma altura */
     border-radius: 10px;
     object-fit: cover;
     margin: 0; /* Reduce el espacio entre imágenes */

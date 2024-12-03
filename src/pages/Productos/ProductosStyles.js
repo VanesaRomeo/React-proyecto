@@ -28,14 +28,14 @@ export const ProductoDiv = styled.div`
       width: 300px;
     }
     p {
-      width: 700px;
+      width: 500px;
       font-size: 18px;
     }
   }
 
   @media (max-width: 540px) {
     h1 {
-      font-size: 25px;
+      font-size: 20px;
       width: 280px;
     }
     p {
@@ -46,7 +46,7 @@ export const ProductoDiv = styled.div`
 
   @media (max-width: 360px) {
     h1 {
-      font-size: 22px;
+      font-size: 20px;
       width: 220px;
     }
     p {
@@ -67,7 +67,7 @@ export const CategoriasSections = styled.section`
     color: rgba(13, 93, 92, 1);
 
     @media (max-width: 560px) {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 `;
@@ -198,7 +198,7 @@ export const ProductCard = styled.div`
     align-items: center;
     img {
       width: 100px;
-      height: 150px;
+      height: 170px;
     }
 
     h3 {

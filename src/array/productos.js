@@ -71,7 +71,7 @@ export const libros = [
       titulo: '1984',
       descripcion: 'Distopía sobre el control totalitario de la sociedad.',
       precio: 1400,
-      category: 'Cs. ficcion',
+      category: 'Cs. Ficcion',
       imagen: 'https://res.cloudinary.com/dc15c8nx7/image/upload/v1732837224/1984_ppcwst.jpg',
     },
     {
