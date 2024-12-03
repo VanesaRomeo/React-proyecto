@@ -65,7 +65,15 @@ export const CartContainer = styled.div`
     z-index: 15;
 
   @media (max-width: 768px) {
-    margin-right: 0; /* Espaciado a la derecha del carrito */
+    margin-right: 1rem; /* Espaciado a la derecha del carrito */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  @media (max-width: 560px) {
+    margin-right: 1rem; /* Espaciado a la derecha del carrito */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,27 +152,26 @@ export const CartBadge = styled.div`
   color: white;
   border-radius: 50%;
   padding: 0.25em 0.5em;
-  font-size: 0.55em;
-  position: absolute;
-  top: 0;
-  right: 0;
+  font-size: 0.75em; /* Ajusta el tamaño del texto del badge */
+  position: absolute; /* Relativo al CartContainer */
+  top: -15px; /* Posición hacia arriba respecto al contenedor */
+  right: -15px; /* Posición hacia la derecha */
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (max-width: 768px) {
-    
-    display: flex;
-    padding-right: 25px;
-    cursor: pointer;
+    font-size: 0.75rem; /* Ajusta para dispositivos pequeños */
+    top: -13px; /* Ajusta la posición en pantallas pequeñas */
+    right: -13px;
   }
 
   @media (max-width: 480px) {
-    font-size: 1.8rem;
-    padding-right: 15px;
+    font-size: 0,5rem;
+    top: -12px;
+    right: -12px;
   }
 `;
-
 
 
 export const CartIcon = styled.div`
@@ -188,9 +195,21 @@ export const LiBack = styled.li`
   background-color: rgba(255, 255, 255, 0.15);
   color: bisque;
   padding: 0.7rem;
+  
+  &:hover {
+    background-color: rgba(29, 28, 64, 0.751);
+    
+  }
+
 
   @media (max-width: 789px) {
     background-color: rgba(29, 28, 64, 0.751);
+
+    
+  &:hover {
+   
+    color: white;
+  }
   }
 
   @media (max-width: 569px) {

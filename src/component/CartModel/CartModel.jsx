@@ -1,6 +1,7 @@
 import {
   ButtonStylesContainer,
   CartModalContainer,
+  CloseButton,
   MainContainer,
   Overlay,
   PrecioContainer,
@@ -40,6 +41,9 @@ const CartModel = () => {
           exit={{ translateY: 100 }}
           transition={{ type: 'spring', damping: 25 }}
         >
+          <CloseButton onClick={() => dispatch(toggleCartVisibility())}>
+            ✖
+          </CloseButton>
           <MainContainer>
             <h2>Tu Compra</h2>
             <ProductCardWrapper>

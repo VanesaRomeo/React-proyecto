@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { FaShoppingCart } from 'react-icons/fa';
 
-import { CartBadge, LinksContainer } from '../NavbarStyles';
+import { CartBadge, CartContainer } from '../NavbarStyles';
 import { toggleCartVisibility } from '@/redux/features/cart/cartSlice';
 
 const CartIcons = () => {
@@ -15,10 +15,10 @@ const CartIcons = () => {
   const dispatch = useDispatch();
 
   return (
-    <LinksContainer onClick={() => dispatch(toggleCartVisibility())}>
+    <CartContainer onClick={() => dispatch(toggleCartVisibility())}>
       <FaShoppingCart />
       <CartBadge>{total}</CartBadge>
-    </LinksContainer>
+    </CartContainer>
   );
 };
 

@@ -71,31 +71,42 @@ export const CategoriasSections = styled.section`
     }
   }
 `;
-
 export const Container = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  padding: 20px 30px;
+  width: 90%; /* Opción de ancho flexible */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 20px; /* Espacio interno */
   text-align: center;
-`;
-
-export const ProductGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 20px;
-  justify-items: center;
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
     padding: 15px;
   }
 
   @media (max-width: 480px) {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
     padding: 10px;
+  }
+`;
+
+
+export const ProductGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; /* Espacio entre los elementos */
+  padding: 20px;
+  justify-items: center;
+
+  @media (max-width: 1300px) {
+    gap: 25px; /* Reducir un poco el espacio en pantallas medianas */
+    padding: 15px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 20px; /* Menor espacio en pantallas más pequeñas */
+    padding: 10px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 15px; /* Espacio compacto en pantallas muy pequeñas */
+    padding: 5px;
   }
 `;
 
@@ -108,6 +119,8 @@ export const ProductCard = styled.div`
   text-align: center;
   width: 100%;
   max-width: 250px;
+  margin: 0 auto; /* Centra la tarjeta en su columna */
+  margin-bottom: 20px; /* Espacio extra entre las tarjetas */
 
   img {
     width: 90%;
@@ -124,89 +137,34 @@ export const ProductCard = styled.div`
   }
 
   p {
-    color: #6c757d;
-    margin: 0.5rem 0;
     color: rgba(13, 93, 92, 1);
+    margin: 0.5rem 0;
   }
 
   @media (max-width: 1300px) {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px; /* Espaciado consistente en pantallas medianas */
+    padding: 25px;
     img {
       width: 170px;
       height: 230px;
     }
-
-    h3 {
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-    }
-  }
-
-  @media (max-width: 968px) {
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 140px;
-      height: 190px;
-    }
-
-    h3 {
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-    }
   }
 
   @media (max-width: 768px) {
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 15px; /* Ajustar el margen en pantallas pequeñas */
+    padding: 20px;
     img {
       width: 140px;
       height: 190px;
-    }
-
-    h3 {
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.9rem;
     }
   }
 
   @media (max-width: 560px) {
-    max-width: 170px;
-    padding: 15px; /* Ajuste del padding para pantallas pequeñas */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 10px; /* Espaciado menor en pantallas muy pequeñas */
+    padding: 15px;
     img {
       width: 100px;
       height: 170px;
-    }
-
-    h3 {
-      font-size: 0.9rem;
-    }
-
-    p {
-      font-size: 0.8rem;
     }
   }
 `;
