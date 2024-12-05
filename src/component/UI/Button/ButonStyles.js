@@ -36,6 +36,7 @@ export const ButtonStylesConteiner = styled(motion.button)`
 
   @media (max-width: 560px) {
     flex-direction: column;
+    text-align:center;
     
   }
 

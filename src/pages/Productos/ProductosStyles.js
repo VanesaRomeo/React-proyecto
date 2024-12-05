@@ -100,11 +100,13 @@ export const ProductGrid = styled.div`
   }
 
   @media (max-width: 768px) {
+    
     gap: 20px; /* Menor espacio en pantallas más pequeñas */
     padding: 10px;
   }
 
   @media (max-width: 480px) {
+   
     gap: 15px; /* Espacio compacto en pantallas muy pequeñas */
     padding: 5px;
   }
@@ -118,6 +120,10 @@ export const ProductGrid = styled.div`
 
 
 export const ProductCard = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   background-color: blanchedalmond;
   padding: 20px;
   border-radius: 8px;
@@ -150,7 +156,8 @@ export const ProductCard = styled.div`
 
 
   @media (min-width: 1920px) {
-    max-width: 350px; 
+    max-width: 350px;
+    padding: 25px;
   }
   
   @media (max-width: 1300px) {
@@ -163,6 +170,8 @@ export const ProductCard = styled.div`
   }
 
   @media (max-width: 768px) {
+   width: 250px;
+   text-align: center;
     margin-bottom: 15px;
     padding: 20px;
     img {
@@ -172,6 +181,7 @@ export const ProductCard = styled.div`
   }
 
   @media (max-width: 560px) {
+    
     margin-bottom: 10px;
     padding: 15px;
     img {
