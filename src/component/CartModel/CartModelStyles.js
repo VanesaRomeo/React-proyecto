@@ -118,6 +118,10 @@ export const ProductCardWrapper = styled.div`
     img {
       width: 70%; /* Imagen más grande en pantallas pequeñas */
     }
+
+    p{
+      text-align: center;
+    }
     
   }
 
@@ -270,7 +274,7 @@ export const ButtonStylesContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+ margin-bottom: 5%;
   @media (max-width: 760px) {
     
     justify-content: center;
@@ -281,6 +285,7 @@ export const ButtonStylesContainer = styled.div`
   @media (max-width: 560px) {
     flex-direction: column;
     gap: 8px;
+   
   }
 `;
 export const PrecioFormat = styled.div``;

@@ -11,7 +11,7 @@ import {
 } from './CartModelStyles';
 import Button from './../UI/Button/Button';
 import { CardCart } from './CardCart';
-
+import { FaWindowClose } from "react-icons/fa";
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
@@ -42,7 +42,7 @@ const CartModel = () => {
           transition={{ type: 'spring', damping: 25 }}
         >
           <CloseButton onClick={() => dispatch(toggleCartVisibility())}>
-            ✖
+          <FaWindowClose />
           </CloseButton>
           <MainContainer>
             <h2>Tu Compra</h2>
@@ -50,7 +50,7 @@ const CartModel = () => {
               {itemsInCart.length ? (
                 itemsInCart.map((item) => <CardCart key={item.id} {...item} />)
               ) : (
-                <p>El carrito esta vacio, ¿no vas a comprar?</p>
+                <p>El carrito esta vacio <br /> ¿no vas a comprar?</p>
               )}
             </ProductCardWrapper>
           </MainContainer>

@@ -225,7 +225,7 @@ export const ContainerModelCart = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  z-index: 30;
  
 
   @media (max-width: 768px) {

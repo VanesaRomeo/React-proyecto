@@ -13,18 +13,19 @@ export const FormContainer = styled.div`
 
   h2 {
     text-align: center;
+  }
 
-    @media (max-width: 768px) {
-      width: 400px;
+  @media (max-width: 768px) {
+    text-align: center;
+      width: 300px;
       font-size: 20px;
     }
     @media (max-width: 480px) {
       text-align: center;
-      width: 300px;
+      width: 200px;
       padding: 12px;
       margin-top: 5%;
     }
-  }
 `;
 
 export const InputStyled = styled(Field)`
@@ -34,6 +35,16 @@ export const InputStyled = styled(Field)`
   border: 1px solid black;
   border-radius: 4px;
   font-size: 16px;
+  @media (max-width: 768px) {
+      width: 70%;
+    
+    }
+    @media (max-width: 480px) {
+      
+      width:60%;
+     
+    }
+
 `;
 
 export const ErrorMessageStyled = styled.div`
@@ -88,15 +99,12 @@ export const TextContainer = styled.div`
   }
 
   @media (max-width: 560px) {
-    font-size: 20px;
+    p{
+    font-size: 18px;
     width: 300px;
     padding: 12px;
-    margin-top: 5%;
+    margin-top: 5%;}
   }
 
-  @media (max-width: 480px) {
-    width: 300px;
-    padding: 12px;
-    margin-top: 5%;
-  }
+ 
 `;
