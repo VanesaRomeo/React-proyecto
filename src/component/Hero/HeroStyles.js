@@ -31,7 +31,7 @@ export const HeroContainer = styled.section`
   z-index: 1;
 
   img {
-    width: 100%;
+    width: 100vw;
     height: auto;
     object-fit: cover;
     @media (max-width: 1090px) {

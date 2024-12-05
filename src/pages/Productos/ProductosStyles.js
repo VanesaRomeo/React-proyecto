@@ -108,7 +108,14 @@ export const ProductGrid = styled.div`
     gap: 15px; /* Espacio compacto en pantallas muy pequeñas */
     padding: 5px;
   }
+
+  /* Nuevo estilo para pantallas grandes */
+  @media (min-width: 1920px) {
+    gap: 50px; /* Aumentar espacio entre los productos */
+    padding: 40px; /* Más espacio alrededor de la cuadrícula */
+  }
 `;
+
 
 export const ProductCard = styled.div`
   background-color: blanchedalmond;
@@ -118,17 +125,9 @@ export const ProductCard = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
-  max-width: 250px;
-  margin: 0 auto; /* Centra la tarjeta en su columna */
-  margin-bottom: 20px; /* Espacio extra entre las tarjetas */
-
-  img {
-    width: 90%;
-    height: 350px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-  }
+  max-width: 300px; /* Aumenta el tamaño máximo en pantallas grandes */
+  margin: 0 auto;
+  margin-bottom: 20px;
 
   h3 {
     font-size: 1.25rem;
@@ -141,8 +140,21 @@ export const ProductCard = styled.div`
     margin: 0.5rem 0;
   }
 
+  img {
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+
+
+  @media (min-width: 1920px) {
+    max-width: 350px; 
+  }
+  
   @media (max-width: 1300px) {
-    margin-bottom: 20px; /* Espaciado consistente en pantallas medianas */
+    margin-bottom: 20px; 
     padding: 25px;
     img {
       width: 170px;
@@ -151,7 +163,7 @@ export const ProductCard = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-bottom: 15px; /* Ajustar el margen en pantallas pequeñas */
+    margin-bottom: 15px;
     padding: 20px;
     img {
       width: 140px;
@@ -160,7 +172,7 @@ export const ProductCard = styled.div`
   }
 
   @media (max-width: 560px) {
-    margin-bottom: 10px; /* Espaciado menor en pantallas muy pequeñas */
+    margin-bottom: 10px;
     padding: 15px;
     img {
       width: 100px;
